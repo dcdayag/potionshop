@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <meta name="author" content="Drei Dayag, Gerzen Zabala, Maya Feliciano, and Zachary Domingo">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="29-05-2021">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<style>
+		    .row{
+		        text-align: center;
+		    }
+            .button{
+                background-color: lightblue;
+                color: black;
+				border-color: transparent;	
+            }
+            #product1, #product2, #product3, #product4, #product5, #product6, #product7, #product8, #product9, #product10, #product11, #product12, #product13, #product14, #product15, #product16, #product17, #product18, #product19, #product20, #product21, #product22, #product23, #product24{
+                display: none;
+            }
+            h3 {
+    background-color: #100010;
+    background-color: rgba(16,0,16,0.94);
+    padding: 0.375em;
+    font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+    font-size: 23px;
+    word-spacing: 4px;
+    white-space: nowrap;
+    line-height: 1.25em;
+    margin: 0.125em 0.25em;
+	    border: 0.125em solid #2D0A63;
+    border-image: -webkit-linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1;
+    border-image: linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1;
+}
+.format-f, h3 {
+    color: #FFF;
+    text-shadow: 0.125em 0.125em 0 #3F3F3F;
+}
+
+.label {
+    font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+    font-size: 23px;
+}
+
+.button{
+outline: 2px solid black;
+border-bottom: 4px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #AAA;
+  border-top: 2px solid #AAA;
+  padding-right: 5px;
+  padding-left: 5px;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover ;
+  background-repeat: repeat;
+  font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px #4C4C4C;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.button span {
+  outline: 2px black;
+  position: relative;
+  line-height: 40px;
+  bottom: 3px;
+}
+
+.button:hover {
+  outline: 2px black;
+  border-bottom: 4px solid #59639A;
+  border-right: 2px solid #59639A;
+  border-left: 2px solid #BDC6FF;
+  border-top: 2px solid #BDC6FF;
+  background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+  color: #FFFFA0;
+}
+
+.button:active {
+  outline: 2px black;
+}
+
+
+.row{
+text-align: center;
+}
+
+img.animated-gif{
+width: 80px;
+height: auto;
+}
+
+.img{
+width: 30px;
+height: auto;
+}
+
+
+#product1, #product2, #product3, #product4, #product5, #product6, #product7, #product8, #product9, #product10, #product11, #product12, #product13, #product14, #product15, #product16, #product17, #product18, #product19, #product20, #product21, #product22, #product23, #product24{
+display: none;
+}
+
+.navi {
+  background-color: #1d041c;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  transition: top 0.3s;
+}
+
+.navi a {
+  color: #f2f2f2;
+  font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  display:block;
+  float:left;
+  padding-top: 0px;
+  text-decoration: none;
+  font-size:30px;
+}
+
+.navi a:hover {
+  background-color: #043F47;
+  color: white;
+}
+
+.tooltip{
+  outline: none;
+  position: relative;
+  min-width: 100px;
+  max-width: 100% !important;
+}
+.tooltip > .tooltip-inner {
+    background-color: #100010;
+    background-color: rgba(16,0,16,0.94);
+    padding: 0.375em;
+    font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+    font-size: 16px;
+    word-spacing: 4px;
+    white-space: nowrap;
+    line-height: 1.25em;
+    margin: 0.125em 0.25em;
+	border: 0.125em solid #2D0A63;
+    border-image: -webkit-linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1;
+    border-image: linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1;
+    display: block;
+  }
+  .format-f, .tooltip > .tooltip-inner{
+    color: #FFF;
+    text-shadow: 0.125em 0.125em 0 #3F3F3F;
+}
+        </style>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+            </script>
+                
+    </head>
+                
+            <div class="bg-image" style="background-image: url('bg.png'); height: 100%;">
+            
+            
+                
+                <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navi").style.top = "0";
+              } else {
+                document.getElementById("navi").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+            </script>
+
+    <body>
+        <div class = "container">
+            <br><br><br><br>
+            <img style="width:100%" src="header.png">
+        </div>
+        <div class="container"> <br><br>  
+	        <h3> Health Potions [SALE: 70% OFF]</h3> <br>
+            <div class="row">
+                <div class="col-sm-4">
+		            <img src ="pot_regen.gif" alt="regeneration"> <br>
+                    <h5 id="regenpot">Potion of Regeneration</h5>
+                    <h6><i>Php 50</i></h6>
+	    	        <button class="button" id="btn1" onclick="addToCart1()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+    		        <img src ="pot_regen.gif" alt="regeneration ii"> <br>
+                    <h5 id="regeniipot">Potion of Regeneration II</h5>
+                    <h6><i>Php 100</i></h6>
+	        	    <button class="button" id="btn2" onclick="addToCart2()">Add to Cart</button>
+                </div>
+	
+    	        <div class="col-sm-4">
+	    	        <img src ="pot_healing.gif" alt="healing"> <br>
+                    <h5 id="healingpot">Potion of Healing</h5>
+                    <h6><i>Php 50</i></h6>
+		            <button class="button" id="btn3" onclick="addToCart3()">Add to Cart</button>
+                </div>
+	        </div><br>
+	
+	        <div class="row">
+		        <div class="col-sm-4">
+		            <img src ="pot_healing.gif" alt="healing ii"> <br>
+                    <h5 id="healingiipot">Potion of Healing II</h5>
+                    <h6><i>Php 100</i></h6>
+	    	        <button class="button" id="btn4" onclick="addToCart4()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="splash_pot_regen.gif" alt="splash potion of regeneration"> <br>
+                    <h5 id="regensplashpot">Splash Potion of Regeneration</h5>
+                    <h6><i>Php 150</i></h6>
+	    	        <button class="button" id="btn5" onclick="addToCart5()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="splash_pot_healing.gif" alt="splash potion of healing"> <br>
+                    <h5 id="healingsplashpot">Splash Potion of Healing</h5>
+                    <h6><i>Php 150</i></h6>
+		            <button class="button" id="btn6" onclick="addToCart6()">Add to Cart</button>
+                </div>
+		
+	        </div><br><br>
+
+	        <h3> Positive-effect Potions or Buffs</h3> <br>
+            <div class="row">
+                <div class="col-sm-4">
+		            <img src ="pot_swiftness.gif" alt="potion of swiftness"> <br>
+                    <h5 id="swiftpot">Potion of Swiftness</h5>
+                    <h6><i>Php 100</i></h6>
+	    	        <button class="button" id="btn7" onclick="addToCart7()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_swiftness.gif" alt="potion of swiftness ii"> <br>
+                    <h5 id="swiftiipot">Potion of Swiftness II</h5>
+                    <h6><i>Php 150</i></h6>
+	    	        <button class="button" id="btn8" onclick="addToCart8()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_strength.gif" alt="potion of strength"> <br>
+                    <h5 id="strengthpot">Potion of Strength</h5>
+                    <h6><i>Php 100</i></h6>
+		            <button class="button" id="btn9" onclick="addToCart9()">Add to Cart</button>
+                </div>
+	        </div><br>
+	
+	        <div class="row">
+		        <div class="col-sm-4">
+		            <img src ="pot_strength.gif" alt="potion of strength ii"> <br>
+                    <h5 id="strengthiipot">Potion of Strength II</h5>
+                    <h6><i>Php 150</i></h6>
+	    	        <button class="button" id="btn10" onclick="addToCart10()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_fireresist.gif" alt="potion of fire resistance"> <br>
+                    <h5 id="firerespot">Potion of Fire Resistance</h5>
+                    <h6><i>Php 150</i></h6>
+	    	        <button class="button" id="btn11" onclick="addToCart11()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_waterbreath.gif" alt="potion of water breathing"> <br>
+                    <h5 id="waterpot">Potion of Water Breathing</h5>
+                    <h6><i>Php 150</i></h6>
+		            <button class="button" id="btn12" onclick="addToCart12()">Add to Cart</button>
+                </div>
+		
+	        </div><br><br>
+	
+	        <h3> Negative-effect Potions [SALE: 90% OFF]</h3> <br>
+            <div class="row">
+                <div class="col-sm-4">
+		            <img src ="pot_harming.gif" alt="potion of harming"> <br>
+                    <h5 id="harmingpot">Potion of Harming</h5>
+                    <h6><i>Php 25</i></h6>
+	    	        <button class="button" id="btn13" onclick="addToCart13()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_harming.gif" alt="potion of harming ii"> <br>
+                    <h5 id="harmingiipot">Potion of Harming II</h5>
+                    <h6><i>Php 50</i></h6>
+	    	        <button class="button" id="btn14" onclick="addToCart14()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_poison.gif" alt="potion of poison"> <br>
+                    <h5 id="poisonpot">Potion of Poison</h5>
+                    <h6><i>Php 25</i></h6>
+		            <button class="button" id="btn15" onclick="addToCart15()">Add to Cart</button>
+                </div>
+	        </div><br>
+	
+	        <div class="row">
+		        <div class="col-sm-4">
+        		    <img src ="pot_poison.gif" alt="potion of poison ii"> <br>
+                    <h5 id="poisoniipot">Potion of Poison II</h5>
+                    <h6><i>Php 50</i></h6>
+	            	<button class="button" id="btn16" onclick="addToCart16()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_weakness.gif" alt="potion of weakness"> <br>
+                    <h5 id="weakpot">Potion of Weakness</h5>
+                    <h6><i>Php 25</i></h6>
+	            	<button class="button" id="btn17" onclick="addToCart17()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="pot_slow.gif" alt="potion of slowness"> <br>
+                    <h5 id="slowpot">Potion of Slowness</h5>
+                    <h6><i>Php 25</i></h6>
+		            <button class="button" id="btn18" onclick="addToCart18()">Add to Cart</button>
+                </div>
+	        </div><br><br>
+
+	        <h3> Materials & Merch [SALE: 60% OFF]</h3> <br>
+            <div class="row">
+                <div class="col-sm-4">
+		            <img src ="" alt="steve figurine"><br>
+                    <h5 id="stevefig">Steve Figurine</h5>
+                    <h6><i>Php 450</i></h6>
+	    	        <button class="button" id="btn19" onclick="addToCart19()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="" alt="alex figurine"> <br>
+                    <h5 id="alexfig">Alex Figurine</h5>
+                    <h6><i>Php 450</i></h6>
+	    	        <button class="button" id="bt20" onclick="addToCart20()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="brewstand.png" alt="brewing stand"> <br>
+                    <h5 id="brewstand">Brewing Stand</h5>
+                    <h6><i>Php 50</i></h6>
+		            <button class="button" id="btn21" onclick="addToCart21()">Add to Cart</button>
+                </div>
+	        </div><br>
+	
+	        <div class="row">
+		        <div class="col-sm-4">
+		            <img src ="bottle.png" alt="glass bottles"><br>
+                    <h5 id="glassbottle">Glass Bottles</h5>
+                    <h6><i>Php 25</i></h6>
+                    <button class="button" id="btn22" onclick="addToCart22()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="cauldron.png" alt="cauldron"><br>
+                    <h5 id="cauldron">Cauldron</h5>
+                    <h6><i>Php 50</i></h6>
+	    	        <button class="button" id="btn23" onclick="addToCart23()">Add to Cart</button>
+                </div>
+	
+	            <div class="col-sm-4">
+		            <img src ="" alt="potion kit"><br>
+                    <h5 id="potkit">Potion Kit</h5>
+                    <h6><i>Php 150</i></h6>
+		            <button class="button" id="btn24" onclick="addToCart24()">Add to Cart</button>
+                </div>
+    	    </div>
+	    </div>	
+        
+	   <div class = "container">
+            <h3>Cart:</h3>
+            <div class="card">
+                <ul class="list-group">
+                    <li class="list-group-item" id="product1">
+                        Potion of Regeneration &nbsp x<span id="quantityNumberA"></span>
+                        <button class="button" id="btn25" onclick="removeToCart1()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product2">
+                        Potion of Regeneration II &nbsp x<span id="quantityNumberB"></span>
+                        <button class="button" id="btn26" onclick="removeToCart2()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product3">
+                        Potion of Healing &nbsp x<span id="quantityNumberC"></span>
+                        <button class="button" id="btn27" onclick="removeToCart3()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product4">
+                        Potion of Healing II &nbsp x<span id="quantityNumberD"></span>
+                        <button class="button" id="btn28" onclick="removeToCart4()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product5">
+                        Splash Potion of Regeneration &nbsp x<span id="quantityNumberE"></span>
+                        <button class="button" id="btn29" onclick="removeToCart5()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product6">
+                        Splash Potion of Healing &nbsp x<span id="quantityNumberF"></span>
+                        <button class="button" id="btn30" onclick="removeToCart6()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product7">
+                        Potion of Swiftness &nbsp x<span id="quantityNumberG"></span>
+                        <button class="button" id="btn31" onclick="removeToCart7()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product8">
+                        Potion of Swiftness II &nbsp x<span id="quantityNumberH"></span>
+                        <button class="button" id="btn32" onclick="removeToCart8()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product9">
+                        Potion of Strength x<span id="quantityNumberI"></span>
+                        <button class="button" id="btn33" onclick="removeToCart9()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product10">
+                        Potion of Strength II &nbsp x<span id="quantityNumberJ"></span>
+                        <button class="button" id="btn34" onclick="removeToCart10()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product11">
+                        Potion of Fire Resistance &nbsp x<span id="quantityNumberK"></span>
+                        <button class="button" id="btn35" onclick="removeToCart11()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product12">
+                        Potion of Water Breathing &nbsp x<span id="quantityNumberL"></span>
+                        <button class="button" id="btn36" onclick="removeToCart12()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product13">
+                        Potion of Harming &nbsp x<span id="quantityNumberM"></span>
+                        <button class="button" id="btn37" onclick="removeToCart13()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product14">
+                        Potion of Harming II &nbsp x<span id="quantityNumberN"></span>
+                        <button class="button" id="btn38" onclick="removeToCart14()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product15">
+                        Potion of Poison &nbsp x<span id="quantityNumberO"></span>
+                        <button class="button" id="btn39" onclick="removeToCart15()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product16">
+                        Potion of Poison II &nbsp x<span id="quantityNumberP"></span>
+                        <button class="button" id="btn40" onclick="removeToCart16()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product17">
+                        Potion of Weakness &nbsp x<span id="quantityNumberQ"></span>
+                        <button class="button" id="btn41" onclick="removeToCart17()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product18">
+                        Potion of Slowness &nbsp x<span id="quantityNumberR"></span>
+                        <button class="button" id="btn42" onclick="removeToCart18()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product19">
+                        Steve Figurine &nbsp x<span id="quantityNumberS"></span>
+                        <button class="button" id="btn43" onclick="removeToCart19()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product20">
+                        Alex Figurine &nbsp x<span id="quantityNumberT"></span>
+                        <button class="button" id="btn44" onclick="removeToCart20()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product21">
+                        Brewing Stand &nbsp x<span id="quantityNumberU"></span>
+                        <button class="button" id="btn45" onclick="removeToCart21()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product22">
+                        Glass Bottles &nbsp x<span id="quantityNumberV"></span>
+                        <button class="button" id="btn46" onclick="removeToCart22()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product23">
+                        Cauldron &nbsp x<span id="quantityNumberW"></span>
+                        <button class="button" id="btn47" onclick="removeToCart23()">Remove from Cart</button>
+                    </li>
+                    <li class="list-group-item" id="product24">
+                        Potion Kit &nbsp x<span id="quantityNumberX"></span>
+                        <button class="button" id="btn48" onclick="removeToCart24()">Remove from Cart</button>
+                    </li>
+
+                    <li class="list-group-item list-group-item-secondary"id="total"><strong>Total: </strong>Php <span id="totalNumber">0    </span></li>
+                </ul>
+            </div>
+        </div>
+	
+        <div class = "container"><br>
+            <h2>Shipping and Delivery Details</h2><br>
+                <form action="http://savantandsparktest.ml/checkout.php" method="post" name="cust_details" onsubmit = "checkname(document.cust_details.cust_name); checkemail(document.cust_details.cust_email); checknum(document.cust_details.cust_number); checkaddr(document.cust_details.cust_addr); checkcart()">
+                    <label for="cust_name">Name: </label><br>
+                    <input type="text" id="cust_name" name="cust_name" class="form-control" placeholder="Input name" >
+                    <div id="nameFeedback" class="invalid-feedback" style="display: none;">
+                        Please provide a valid name.
+                    </div><br>
+
+                    <label for="cust_email">Email Address: </label><br>
+                    <input type="text" id="cust_email" name="cust_email" class="form-control" placeholder="Input email">    
+                    <div id="emailFeedback" class="invalid-feedback" style="display: none;">
+                        Please provide a valid email address.
+                    </div><br>
+                    
+                    <label for="cust_number">Phone Number: </label><br>
+                    <input type="number" id="cust_number" name="cust_number" class="form-control" placeholder="Input number" onkeypress="return check(event);">  
+                    <div id="numFeedback" class="invalid-feedback" style="display: none;">
+                        Please provide a valid number.
+                    </div><br>
+
+                    <label for="cust_addr">Delivery Address: </label><br>
+                    <input type="text" id="cust_addr" name="cust_addr" class="form-control" placeholder="Input delivery address">   
+                    <div id="addrFeedback" class="invalid-feedback" style="display: none;">
+                        Please provide a valid address.
+                    </div><br>
+                    
+                    <input type="text" id="cust_order" name="cust_order" class="form-control" style="display:none;">
+                    
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+        <div class="navi" id="navi">
+            <a href="sampleproj-1"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2d/Plains_Grass_Block.png/revision/latest?cb=20190525093706" style="height:40px;"></a>
+            <a class="active" href="about.html">about us.</a>
+        
+            </div>
+
+        <script>
+            var total = 0;
+            var price1 = 50;
+            var price2 = 100;
+            var price3 = 150;
+            var price4 = 200;
+            var price5 = 250;
+            var price6 = 300;
+            var price7 = 300;
+            var price8 = 300;
+            var price9 = 150;
+            var price10 = 200;
+            var price11 = 250;
+            var price12 = 300;
+            var price13 = 50;
+            var price14 = 100;
+            var price15 = 150;
+            var price16 = 200;
+            var price17 = 250;
+            var price18 = 300;
+            var price19 = 300;
+            var price20 = 300;
+            var price21 = 150;
+            var price22 = 200;
+            var price23 = 250;
+            var price24 = 300;     
+            var a = 0;
+            var b = 0;
+            var c = 0;
+			var d = 0;
+			var e = 0;
+			var f = 0;
+			var g = 0;
+			var h = 0;
+			var i = 0;
+			var j = 0;
+			var k = 0;
+			var l = 0;
+			var m = 0;
+			var n = 0;
+			var o = 0;
+			var p = 0;
+			var q = 0;
+			var r = 0;
+			var s = 0;
+			var t = 0;
+			var u = 0;
+			var v = 0;
+			var w = 0;
+			var x = 0;
+
+            var count1 = 0;
+
+            var prod_name = [];
+            var prod_price = [];
+            var customerorder = [];
+
+            function addToCart1() {
+                var product1 = document.getElementById("btn1");
+                    total += price1;
+                    a += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberA").innerHTML = a;
+                    document.getElementById("product1").style.display = "block";
+                    console.log(total);
+                    console.log(a); 
+
+                    var prods = {
+                        prod_name: document.getElementById("regenpot").innerHTML,
+                        prod_price: 50
+                    }
+                    
+                    customerorder.push(prods);
+                    
+            }
+
+            function addToCart2() {
+                var product2 = document.getElementById("btn2");
+                total += price2;
+                    b += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberB").innerHTML = b;
+                    document.getElementById("product2").style.display = "block";
+                    console.log(total);
+                    console.log(b);
+
+                    var prods = {
+                        prod_name: document.getElementById("regeniipot").innerHTML,
+                        prod_price: 100
+                    }
+                    
+                    customerorder.push(prods);
+            }
+
+            function addToCart3() {
+                var product3 = document.getElementById("btn3");
+                    total += price3;
+                    c += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberC").innerHTML = c;
+                    document.getElementById("product3").style.display = "block";
+                    console.log(total);
+                    console.log(c);
+
+                    var prods = {
+                        prod_name: document.getElementById("healingpot").innerHTML,
+                        prod_price: 50
+                    }
+                    
+                    customerorder.push(prods);
+                }
+				
+		    function addToCart4() {
+                var product4 = document.getElementById("btn4");
+                    total += price4;
+                    d += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberD").innerHTML = d;
+                    document.getElementById("product4").style.display = "block";
+                    console.log(total);
+                    console.log(d);
+
+                    var prods = {
+                        prod_name: document.getElementById("healingiipot").innerHTML,
+                        prod_price: 100
+                    }
+                    
+                    customerorder.push(prods);
+                }
+				
+			function addToCart5() {
+                var product5 = document.getElementById("btn5");
+                    total += price5;
+                    e += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberE").innerHTML = e;
+                    document.getElementById("product5").style.display = "block";
+                    console.log(total);
+                    console.log(e);
+
+                    var prods = {
+                        prod_name: document.getElementById("regensplashpot").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods);
+                }
+				
+			function addToCart6() {
+                var product6 = document.getElementById("btn6");
+                    total += price6;
+                    f += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberF").innerHTML = f;
+                    document.getElementById("product6").style.display = "block";
+                    console.log(total);
+                    console.log(f);
+
+                    var prods = {
+                        prod_name: document.getElementById("healingsplashpot").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods);
+                }
+			
+			function addToCart7() {
+                var product7 = document.getElementById("btn7");
+                    total += price7;
+                    g += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberG").innerHTML = g;
+                    document.getElementById("product7").style.display = "block";
+                    console.log(total);
+                    console.log(g);
+
+                    var prods = {
+                        prod_name: document.getElementById("swiftpot").innerHTML,
+                        prod_price: 100
+                    }
+                    
+                    customerorder.push(prods);                
+                }
+		    
+			function addToCart8() {
+                var product6 = document.getElementById("btn8");
+                    total += price8;
+                    h += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberH").innerHTML = h;
+                    document.getElementById("product8").style.display = "block";
+                    console.log(total);
+                    console.log(h);
+
+                    var prods = {
+                        prod_name: document.getElementById("swiftiipot").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+			function addToCart9() {
+                var product3 = document.getElementById("btn9");
+                    total += price9;
+                    i += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberI").innerHTML = i;
+                    document.getElementById("product9").style.display = "block";
+                    console.log(total);
+                    console.log(i);
+
+                    var prods = {
+                        prod_name: document.getElementById("strengthpot").innerHTML,
+                        prod_price: 100
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+		    function addToCart10() {
+                var product4 = document.getElementById("btn10");
+                    total += price10;
+                    j += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberJ").innerHTML = j;
+                    document.getElementById("product10").style.display = "block";
+                    console.log(total);
+                    console.log(j);
+
+                    var prods = {
+                        prod_name: document.getElementById("strengthiipot").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+			function addToCart11() {
+                var product5 = document.getElementById("btn11");
+                    total += price11;
+                    k += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberK").innerHTML = k;
+                    document.getElementById("product11").style.display = "block";
+                    console.log(total);
+                    console.log(k);
+
+                    var prods = {
+                        prod_name: document.getElementById("firerespot").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+			function addToCart12() {
+                var product6 = document.getElementById("btn12");
+                    total += price12;
+                    l += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberL").innerHTML = l;
+                    document.getElementById("product12").style.display = "block";
+                    console.log(total);
+                    console.log(l);
+
+                    var prods = {
+                        prod_name: document.getElementById("waterpot").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+
+            function addToCart13() {
+                var product1 = document.getElementById("btn13");
+                    total += price13;
+                    m += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberM").innerHTML = m;
+                    document.getElementById("product13").style.display = "block";
+                    console.log(total);
+                    console.log(m);
+
+                    var prods = {
+                        prod_name: document.getElementById("harmingpot").innerHTML,
+                        prod_price: 25
+                    }
+                    
+                    customerorder.push(prods); 
+            }
+
+            function addToCart14() {
+                var product2 = document.getElementById("btn14");
+                    total += price14;
+                    n += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberN").innerHTML = n;
+                    document.getElementById("product14").style.display = "block";
+                    console.log(total);
+                    console.log(n);
+
+                    var prods = {
+                        prod_name: document.getElementById("harmingiipot").innerHTML,
+                        prod_price: 50
+                    }
+                    
+                    customerorder.push(prods); 
+            }
+
+            function addToCart15() {
+                var product3 = document.getElementById("btn15");
+                    total += price15;
+                    o += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberO").innerHTML = o;
+                    document.getElementById("product15").style.display = "block";
+                    console.log(total);
+                    console.log(o);
+
+                    var prods = {
+                        prod_name: document.getElementById("poisonpot").innerHTML,
+                        prod_price: 25
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+		    function addToCart16() {
+                var product4 = document.getElementById("btn16");
+                    total += price16;
+                    p += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberP").innerHTML = p;
+                    document.getElementById("product16").style.display = "block";
+                    console.log(total);
+                    console.log(p);
+
+                    var prods = {
+                        prod_name: document.getElementById("poisoniipot").innerHTML,
+                        prod_price: 50
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+			function addToCart17() {
+                var product5 = document.getElementById("btn17");
+                    total += price17;
+                    q += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberQ").innerHTML = q;
+                    document.getElementById("product17").style.display = "block";
+                    console.log(total);
+                    console.log(q);
+
+                    var prods = {
+                        prod_name: document.getElementById("weakpot").innerHTML,
+                        prod_price: 25
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+			function addToCart18() {
+                var product6 = document.getElementById("btn18");
+                    total += price18;
+                    r += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberR").innerHTML = r;
+                    document.getElementById("product18").style.display = "block";
+                    console.log(total);
+                    console.log(r);
+
+                    var prods = {
+                        prod_name: document.getElementById("slowpot").innerHTML,
+                        prod_price: 25
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+			
+			function addToCart19() {
+                var product7 = document.getElementById("btn19");
+                    total += price19;
+                    s += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberS").innerHTML = s;
+                    document.getElementById("product19").style.display = "block";
+                    console.log(total);
+                    console.log(s);
+
+                    var prods = {
+                        prod_name: document.getElementById("stevefig").innerHTML,
+                        prod_price: 450
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+		    
+			function addToCart20() {
+                var product6 = document.getElementById("btn20");
+                    total += price20;
+                    t += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberT").innerHTML = t;
+                    document.getElementById("product20").style.display = "block";
+                    console.log(total);
+                    console.log(t);
+
+                    var prods = {
+                        prod_name: document.getElementById("alexfig").innerHTML,
+                        prod_price: 450
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+			function addToCart21() {
+                var product3 = document.getElementById("btn21");
+                    total += price21;
+                    u += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberU").innerHTML = u;
+                    document.getElementById("product21").style.display = "block";
+                    console.log(total);
+                    console.log(u);
+
+                    var prods = {
+                        prod_name: document.getElementById("brewstand").innerHTML,
+                        prod_price: 50
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+		    function addToCart22() {
+                var product4 = document.getElementById("btn22");
+                    total += price22;
+                    v += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberV").innerHTML = v;
+                    document.getElementById("product22").style.display = "block";
+                    console.log(total);
+                    console.log(v);
+
+                    var prods = {
+                        prod_name: document.getElementById("glassbottle").innerHTML,
+                        prod_price: 25
+                    }
+                    
+                    customerorder.push(prods); 
+                }
+				
+			function addToCart23() {
+                var product5 = document.getElementById("btn23");
+                    total += price23;
+                    w += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberW").innerHTML = w;
+                    document.getElementById("product23").style.display = "block";
+                    console.log(total);
+                    console.log(w);
+
+                    var prods = {
+                        prod_name: document.getElementById("cauldron").innerHTML,
+                        prod_price: 50
+                    }
+                    
+                    customerorder.push(prods);
+                }
+				
+			function addToCart24() {
+                var product6 = document.getElementById("btn24");
+                    total += price24;
+                    x += 1;
+                    document.getElementById("totalNumber").innerHTML = total;
+                    document.getElementById("quantityNumberX").innerHTML = x;
+                    document.getElementById("product24").style.display = "block";
+                    console.log(total);
+                    console.log(x);
+
+                    var prods = {
+                        prod_name: document.getElementById("potkit").innerHTML,
+                        prod_price: 150
+                    }
+                    
+                    customerorder.push(prods);
+                }
+
+
+
+
+		    function removeToCart1() {
+                var product1 = document.getElementById("btn25");
+                if (price1>49) {if (a>0) {a -= 1; total -= price1;}}
+                if (a==0) {document.getElementById("product1").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberA").innerHTML = a;
+                console.log(total);
+                console.log(a);
+                
+                var prods = {
+                    prod_name: document.getElementById("regenpot").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+            }  
+            function removeToCart2() {
+                var product2 = document.getElementById("btn26");
+                if (price2>99) {if (b>0) {b -= 1; total -= price2;}}
+                if (b==0) {document.getElementById("product2").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberB").innerHTML = b;
+                console.log(total);
+                console.log(b);
+                
+                var prods = {
+                    prod_name: document.getElementById("regeniipot").innerHTML,
+                    prod_price: 100
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+            }  
+				
+            function removeToCart3() {
+                var product3 = document.getElementById("btn27");
+                if (price3>149) {if (c>0) {c -= 1; total -= price3;}}
+                if (c==0) {document.getElementById("product3").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberC").innerHTML = c;
+                console.log(total);
+                console.log(c);
+
+                var prods = {
+                    prod_name: document.getElementById("healingpot").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart4() {
+                if (price4>199) {if (d>0) {d -= 1; total -= price4;}}
+                if (d==0) {document.getElementById("product4").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberD").innerHTML = d;
+                console.log(total);
+                console.log(d);
+
+                var prods = {
+                    prod_name: document.getElementById("healingiipot").innerHTML,
+                    prod_price: 100
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+            }
+			function removeToCart5() {
+                if (price5>249) {if (e>0) {e -= 1; total -= price5;}}
+                if (e==0) {document.getElementById("product5").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberE").innerHTML = e;
+                console.log(total);
+                console.log(e);
+
+                var prods = {
+                    prod_name: document.getElementById("regensplashpot").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart6() {
+                if (price6>299) {if (f>0) {f -= 1; total -= price6;}}
+                if (f==0) {document.getElementById("product6").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberF").innerHTML = f;
+                console.log(total);
+                console.log(f);
+
+                var prods = {
+                    prod_name: document.getElementById("healingsplashpot").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart7() {
+                if (price7>299) {if (g>0) {g -= 1; total -= price7;}}
+                if (g==0) {document.getElementById("product7").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberG").innerHTML = g;
+                console.log(total);
+                console.log(g);
+
+                var prods = {
+                    prod_name: document.getElementById("swiftpot").innerHTML,
+                    prod_price: 100
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart8() {
+                if (price8>299) {if (h>0) {h -= 1; total -= price8;}}
+                if (h==0) {document.getElementById("product8").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberH").innerHTML = h;
+                console.log(total);
+                console.log(h);
+
+                var prods = {
+                    prod_name: document.getElementById("swiftiipot").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+            function removeToCart9() {
+                if (price9>149) {if (i>0) {i -= 1; total -= price9;}}
+                if (i==0) {document.getElementById("product9").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberI").innerHTML = i;
+                console.log(total);
+                console.log(i);
+
+                var prods = {
+                    prod_name: document.getElementById("strengthpot").innerHTML,
+                    prod_price: 100
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var ii=0; ii<qqq; ii++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart10() {
+                if (price10>199) {if (j>0) {j -= 1; total -= price10;}}
+                if (j==0) {document.getElementById("product10").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberJ").innerHTML = j;
+                console.log(total);
+                console.log(j);
+
+                var prods = {
+                    prod_name: document.getElementById("strengthiipot").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart11() {
+                if (price11>249) {if (k>0) {k -= 1; total -= price11;}}
+                if (k==0) {document.getElementById("product11").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberK").innerHTML = k;
+                console.log(total);
+                console.log(k);
+
+                var prods = {
+                    prod_name: document.getElementById("firerespot").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+				
+			function removeToCart12() {
+                if (price12>299) {if (l>0) {l -= 1; total -= price12;}}
+                if (l==0) {document.getElementById("product12").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberL").innerHTML = l;
+                console.log(total);
+                console.log(l);
+
+                var prods = {
+                    prod_name: document.getElementById("waterpot").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }
+			
+			function removeToCart13() {
+                if (price13>49) {if (m>0) {m -= 1; total -= price13;}}
+                if (m==0) {document.getElementById("product13").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberM").innerHTML = m;
+                console.log(total);
+                console.log(m);
+
+                var prods = {
+                    prod_name: document.getElementById("harmingpot").innerHTML,
+                    prod_price: 25
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+            function removeToCart14() {
+                if (price14>99) {if (n>0) {n -= 1; total -= price14;}}
+                if (n==0) {document.getElementById("product14").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberN").innerHTML = n;
+                console.log(total);
+                console.log(n);
+
+                var prods = {
+                    prod_name: document.getElementById("harmingiipot").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+            function removeToCart15() {
+                if (price15>149) {if (o>0) {o -= 1; total -= price15;}}
+                if (o==0) {document.getElementById("product15").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberO").innerHTML = o;
+                console.log(total);
+                console.log(o);
+
+                var prods = {
+                    prod_name: document.getElementById("poisonpot").innerHTML,
+                    prod_price: 25
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart16() {
+                if (price16>199) {if (p>0) {p -= 1; total -= price16;}}
+                if (p==0) {document.getElementById("product16").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberP").innerHTML = p;
+                console.log(total);
+                console.log(p);
+
+                var prods = {
+                    prod_name: document.getElementById("poisoniipot").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart17() {
+                if (price17>249) {if (q>0) {q -= 1; total -= price17;}}
+                if (q==0) {document.getElementById("product17").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberQ").innerHTML = q;
+                console.log(total);
+                console.log(q);
+
+                var prods = {
+                    prod_name: document.getElementById("weakpot").innerHTML,
+                    prod_price: 25
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart18() {
+                if (price18>299) {if (r>0) {r -= 1; total -= price18;}}
+                if (r==0) {document.getElementById("product18").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberR").innerHTML = r;
+                console.log(total);
+                console.log(r);
+
+                var prods = {
+                    prod_name: document.getElementById("slowpot").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart19() {
+                if (price19>299) {if (s>0) {s -= 1; total -= price19;}}
+                if (s==0) {document.getElementById("product19").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberS").innerHTML = s;
+                console.log(total);
+                console.log(s);
+
+                var prods = {
+                    prod_name: document.getElementById("stevefig").innerHTML,
+                    prod_price: 450
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart20() {
+                if (price20>299) {if (t>0) {t -= 1; total -= price20;}}
+                if (t==0) {document.getElementById("product20").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberT").innerHTML = t;
+                console.log(total);
+                console.log(t);
+
+                var prods = {
+                    prod_name: document.getElementById("alexfig").innerHTML,
+                    prod_price: 450
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+            function removeToCart21() {
+                if (price21>149) {if (u>0) {u -= 1; total -= price21;}}
+                if (u==0) {document.getElementById("product21").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberU").innerHTML = u;
+                console.log(total);
+                console.log(u);
+
+                var prods = {
+                    prod_name: document.getElementById("brewstand").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart22() {
+                if (price22>199) {if (v>0) {v -= 1; total -= price22;}}
+                if (v==0) {document.getElementById("product22").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberV").innerHTML = v;
+                console.log(total);
+                console.log(v);
+
+                var prods = {
+                    prod_name: document.getElementById("glassbottle").innerHTML,
+                    prod_price: 25
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart23() {
+                if (price23>249) {if (w>0) {w -= 1; total -= price23;}}
+                if (w==0) {document.getElementById("product23").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberW").innerHTML = w;
+                console.log(total);
+                console.log(w);
+
+                var prods = {
+                    prod_name: document.getElementById("cauldron").innerHTML,
+                    prod_price: 50
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+			function removeToCart24() {
+                if (price24>299) {if (x>0) {x -= 1; total -= price24;}}
+                if (x==0) {document.getElementById("product24").style.display = "none";}
+                document.getElementById("totalNumber").innerHTML = total;
+                document.getElementById("quantityNumberX").innerHTML = x;
+                console.log(total);
+                console.log(x);
+
+                var prods = {
+                    prod_name: document.getElementById("potkit").innerHTML,
+                    prod_price: 150
+                }
+                var prodsstring = JSON.stringify(prods);
+                var stringcust = JSON.stringify(customerorder);
+                var xy = stringcust.indexOf(prodsstring);
+                var zz = prodsstring.length;
+                var ww = stringcust.length;
+
+                var zzz = xy+zz+1;
+
+                
+                if (xy!==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                } else if (xy==1){
+                    var aa = stringcust.slice(1, xy);
+                    var bb = stringcust.slice(zzz, ww-1);
+                    var cc = aa + bb;
+                    var stringcust = "[" + cc + "]";
+                    console.log(stringcust);
+                }
+                
+
+                var sss = JSON.parse(stringcust);
+                var qqq = customerorder.length;
+                for(var i=0; i<qqq; i++){
+                    customerorder.shift();
+                }
+
+                customerorder.push(sss);
+                }  
+				
+            function checkcart(){    
+                var cust_order = JSON.stringify(customerorder);
+                document.getElementById("cust_order").value = cust_order;
+                alert(document.getElementById("cust_order").value);
+
+            	var x = cust_order.lastIndexOf("}");
+                var m = cust_order.slice(0, x+2);
+                var n = cust_order.length - m.length;
+                var cust_order = m.slice(n);
+  
+                 
+                document.getElementById("cust_order").value = cust_order;
+            }
+
+            function checkaddr(addr){
+                if (addr.value.length !==0 && addr.value.trim() !== ""){
+                    document.getElementById("cust_addr").classList.remove("is-invalid");
+                    document.getElementById("addrFeedback").style.display="none";
+                    return true;
+                } else {
+                    document.getElementById("cust_addr").classList.add("is-invalid");
+                    document.getElementById("addrFeedback").style.display="block";
+                    event.preventDefault();
+                    return false;
+                }
+            }
+
+            function checknum(number){
+                if (number.value.length <6 || number.value.length >15){
+                    document.getElementById("cust_number").classList.add("is-invalid");
+                    document.getElementById("numFeedback").style.display="block";
+                    event.preventDefault();
+                    return false;
+                } else {
+                    document.getElementById("cust_number").classList.remove("is-invalid");
+                    document.getElementById("numFeedback").style.display="none";
+                    return true;
+                }
+            }
+
+            function checkemail(email){
+                var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;          
+                if(email.value.match(mailformat)) {
+                    document.getElementById("cust_email").classList.remove("is-invalid");
+                    document.getElementById("emailFeedback").style.display="none";
+                    return true;
+                } else {
+                    document.getElementById("cust_email").classList.add("is-invalid");
+                    document.getElementById("emailFeedback").style.display="block";
+                    event.preventDefault();
+                    return false;
+                }
+            }
+
+            function checkname(name){
+                if (name.value.length !==0 && name.value.trim() !== "" && name.value.length > 3){
+                    document.getElementById("cust_name").classList.remove("is-invalid");
+                    document.getElementById("nameFeedback").style.display="none";
+                    return true;
+                } else {
+                    document.getElementById("cust_name").classList.add("is-invalid");
+                    document.getElementById("nameFeedback").style.display="block";
+                    event.preventDefault();
+                    return false;
+                }
+            }
+
+            function check(e){
+                return e.charCode === 0 || ((e.charCode >= 48 && e.charCode <= 57));
+            }
+        </script>
+    </body>
+</html>

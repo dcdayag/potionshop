@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <meta name="author" content="Drei Dayag, Gerzen Zabala, Maya Feliciano, and Zachary Domingo">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="29-05-2021">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<style>
+h3 {
+    background-color: #100010;
+    background-color: rgba(16,0,16,0.94);
+    padding: 0.375em;
+    font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+    font-size: 23px;
+    word-spacing: 4px;
+    white-space: nowrap;
+    line-height: 1.25em;
+    margin: 0.125em 0.25em;
+	    border: 0.125em solid #2D0A63;
+    border-image: -webkit-linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1;
+    border-image: linear-gradient(rgba(80,0,255,0.31),rgba(40,0,127,0.31)) 1;
+}
+.format-f, h3 {
+    color: #FFF;
+    text-shadow: 0.125em 0.125em 0 #3F3F3F;
+}
+
+.navi {
+  background-color: #1d041c;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  transition: top 0.3s;
+}
+
+.navi a {
+  color: #f2f2f2;
+  font-family: Minecraft,"WenQuanYi Bitmap Song",SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  display:block;
+  float:left;
+  padding-top: 0px;
+  text-decoration: none;
+  font-size:30px;
+}
+
+.navi a:hover {
+  background-color: #043F47;
+  color: white;
+}
+
+.endpic {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0% 2%;
+  box-shadow: 0px 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  background-color: #100010;
+  background-color: rgba(16,0,16,0.94);
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 15%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+</style>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navi").style.top = "0";
+      } else {
+        document.getElementById("navi").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+
+    </head>
+
+    <body>
+    <div class="bg-image" style="background-image: url('bg.png'); height: 100%;">
+
+    <div class="container"> <br><br><br><br>
+	    <h3 style="text-align: center;"> About Us </h3><br>
+        <img style="width:100%" src="headerab.png"> <br><br>
+        <h3 style="text-align: center;"> Creators </h3><br>
+        <div class="endpic">
+            <div class="box">
+              <img src="zach.png">
+              <span style="font-family: Minecraft,'WenQuanYi Bitmap Song',SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+              font-size: 25px; color:white; text-shadow: #3F3F3F;">Zach</span>
+            </div>
+            <div class="box">
+              <img src="drei.png">
+              <span style="font-family: Minecraft,'WenQuanYi Bitmap Song',SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+              font-size: 25px; color:white; text-shadow: #3F3F3F;">Drei</span>
+            </div>
+            <div class="box">
+              <img src="gerzen.png">
+              <span style="font-family: Minecraft,'WenQuanYi Bitmap Song',SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+              font-size: 25px; color:white; text-shadow: #3F3F3F;">Gerzen</span>
+            </div>
+            <div class="box">
+              <img src="max.png">
+              <span style="font-family: Minecraft,'WenQuanYi Bitmap Song',SimSun,Unifont,NISC18030,Beijing,Courier,sans-serif;
+              font-size: 25px; color:white; text-shadow: #3F3F3F;">Max</span>
+            </div>
+          </div>
+
+        <br><br><br><br>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </div>
+
+
+    </div>
+
+        <div class="navi" id="navi">
+        <a href="cs"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2d/Plains_Grass_Block.png/revision/latest?cb=20190525093706" style="height:40px;"></a>
+        <a class="active" href="index.html">about us.</a>
+        </div>
+
+    </body>
+</html>
